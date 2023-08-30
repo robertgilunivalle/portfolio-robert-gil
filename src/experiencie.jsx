@@ -2,12 +2,14 @@ import "./style.css"
 import { useRef } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-useFrame((state, delta) => {
-    boxRef.current.rotation.x += 1 * delta;
-});
+
+
 
 const Experience = () => {
     const boxRef = useRef();
+useFrame((state, delta) => {
+    boxRef.current.rotation.x += 1 * delta;
+});
     console.log(boxRef.current)
     return(
         
