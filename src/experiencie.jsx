@@ -4,7 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 
-
+//comentario de prueba
 const Experience = () => {
     const boxRef = useRef();
 useFrame((state, delta) => {
