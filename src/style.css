@@ -11,3 +11,20 @@ body,
 canvas{
     touch-action: none;
 }
+.info-container {
+    /*se pone el frente del canvas*/
+    background-color: rgb(152, 2, 147);
+    top: 27%;   
+    bottom: 3%  ;
+    right: 2%;
+    padding: 0rem 0rem;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+    border-top: 4px rgb(98, 1, 91) solid;
+    border-bottom: 4px rgb(145, 19, 143) solid;
+    border-left: 4px rgb(134, 9, 94) solid;
+    border-right: 4px rgb(136, 9, 109) solid;
+    border-radius: 10px 10px 10px 10px;
+  }
