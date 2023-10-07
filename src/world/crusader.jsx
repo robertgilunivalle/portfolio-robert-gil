@@ -15,7 +15,7 @@ const crusader = () => {
     }, [])
 
   return(
-    <mesh ref={crusaderRef} position-x={2} position-y={0} rotation-y={-Math.PI * 0.15} scale={0.5}>
+    <mesh ref={crusaderRef} position-x={2} position-y={-2} rotation-y={-Math.PI * 0.15} scale={0.5}>
     <primitive object={crusaderModel.scene}/>
   </mesh>
   )

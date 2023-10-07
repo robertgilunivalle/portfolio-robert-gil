@@ -28,3 +28,11 @@ canvas{
     border-right: 4px rgb(136, 9, 109) solid;
     border-radius: 10px 10px 10px 10px;
   }
+  .welcome-text  {
+    background: #00000088;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
