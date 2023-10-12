@@ -1,7 +1,8 @@
 import { Canvas } from "@react-three/fiber";
+import "./style.css";
 import { createRoot} from "react-dom/client";
-import Experience from "./experiencie";
 import { Info } from "./Info";
+import Experience from "./world/Staging/experiencie";
 const root = createRoot(document.getElementById('root'));
 
 root.render(

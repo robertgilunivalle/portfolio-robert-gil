@@ -2,7 +2,7 @@ import { useAnimations, useGLTF } from '@react-three/drei'
 import React, { useEffect, useRef } from 'react'
 
 
-const crusader = () => {
+const Crusader = () => {
     const crusaderRef= useRef();
     const crusaderModel = useGLTF('/assets/models/crusader/scene.gltf')
     const {animations} = crusaderModel;
@@ -21,5 +21,5 @@ const crusader = () => {
   )
 }
 
-export default crusader;
+export default Crusader;
 useGLTF.preload("/assets/model/crusader/scene.gltf");
