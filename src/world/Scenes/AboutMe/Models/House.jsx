@@ -25,4 +25,4 @@ export function House(props) {
 }
 
 export default House;
-useGLTF.preload("/assets/models/House/house.glb");
+useGLTF.preload("/assets/models/house/house.glb");
