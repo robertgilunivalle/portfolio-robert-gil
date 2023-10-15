@@ -44,8 +44,8 @@ useFrame((state, delta) => {
       <Physics
       debug>
       <Welcome />
-      <AboutMe />
-      {/* <Hitting /> */}
+      {/* <AboutMe /> */}
+
       </Physics>
 
       <Physics
