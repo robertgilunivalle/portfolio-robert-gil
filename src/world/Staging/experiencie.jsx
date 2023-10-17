@@ -12,6 +12,7 @@ import Welcome from "../Scenes/Welcome/Welcome";
 import { Physics } from "@react-three/rapier";
 import Environments from "./Environment";
 import Hitting from "../Scenes/Hitting/Hitting";
+import Lights from "./Lights";
 
 
 
@@ -23,7 +24,7 @@ const Experience = () => {
     const coneRef = useRef();
     const torusRef = useRef();
 
-{/*
+{
 useFrame((state, delta) => {
     boxRef.current.rotation.x += 1 * delta;
     sphereRef.current.rotation.x += 0.01;
@@ -33,7 +34,7 @@ useFrame((state, delta) => {
     torusRef.current.rotation.x += 0.01;
     torusRef.current.rotation.y += 0.01;
 });
-*/}
+}
 
 
     return(
@@ -41,6 +42,7 @@ useFrame((state, delta) => {
       <>
       <OrbitControls makeDefault />
       <Environments />
+      <Lights />
       <Physics
       debug>
       <Welcome />
@@ -60,28 +62,28 @@ useFrame((state, delta) => {
         <directionalLight position={[10, 10, 5]} intensity={2} />
       </group>
   
-      <group position={[0, 0, 0]}>
+      <group position={[6, 0, 0]}>
           <mesh position-y={-2} rotation-x={-Math.PI / 2}>
             <planeGeometry attach="geometry" args={[12, 12]} />
             <meshStandardMaterial attach="material" color="green" />
           </mesh>
         </group>
-      {/*
-      <group position={[0, 0, 0]}>
-        <mesh ref={sphereRef} position={[0, 1, 0]}> 
+      
+      <group position={[11, -1, 5]}>
+        <mesh ref={sphereRef} > 
           <sphereGeometry args={[1, 32, 32]} />
           <meshDepthMaterial color="red" />
         </mesh>
       </group>
 
-      <group position={[0, 0, 0]}>
-        <mesh ref={coneRef} position={[0, 2, 0]}> 
+      <group position={[11, 2, 5]}>
+        <mesh ref={coneRef} > 
           <coneGeometry args={[1, 2, 32]} />
           <meshLambertMaterial color="blue" />
         </mesh>
       </group>
 
-      <group position={[0, 0, 0]}>
+      <group position={[11, 3, 5]}>
         <mesh ref={torusRef} position={[0, 3, 0]}> 
           <torusGeometry args={[1, 0.3, 16, 100]} />
           <meshMatcapMaterial color="green" />
@@ -95,7 +97,7 @@ useFrame((state, delta) => {
         </mesh>
       </group>
 
-      <group position={[0, 0, 0]}>
+      <group position={[11, 4, 5]}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={2} />
         <mesh ref={boxRef} position={[0, 4, 0]}> 
@@ -104,7 +106,7 @@ useFrame((state, delta) => {
         </mesh>
       </group>
 
-      */}
+      
 
 
     </>
