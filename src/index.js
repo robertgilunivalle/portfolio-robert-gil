@@ -15,8 +15,8 @@ root.render(
     <Experience/>
     </Canvas>
     <Info
-    nombre = {"Robert Fernando Gil Trujillo"}
-    biografia = {"Estudiante de septimo semestre de ingenria de sistemas en la Universidad del Valle"}
+     nombre = {"Robert Fernando Gil Trujillo"} 
+    biografia = {"Estudiante de séptimo semestre de ingeniería de sistemas en la Universidad del Valle"}
     />
     </> 
     

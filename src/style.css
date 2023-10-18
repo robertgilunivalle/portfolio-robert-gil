@@ -7,32 +7,67 @@ body,
     width: 100%;
     height: 100%;
     background: black;
+    font-family: 'Outfit', sans-serif;
 }
 canvas{
     touch-action: none;
 }
 .info-container {
-    /*se pone el frente del canvas*/
-    background-color: rgb(152, 2, 147);
-    top: 27%;   
-    bottom: 3%  ;
-    right: 2%;
-    padding: 0rem 0rem;
+    background-color: rgb(126, 11, 122);
     position: absolute;
+    top: 24%;
+    right: 2%;
+    bottom: 3%;
+    padding: 0;
     z-index: 1;
     width: 40%;
-    height: 50%;
-    border-top: 4px rgb(98, 1, 91) solid;
-    border-bottom: 4px rgb(145, 19, 143) solid;
-    border-left: 4px rgb(134, 9, 94) solid;
-    border-right: 4px rgb(136, 9, 109) solid;
-    border-radius: 10px 10px 10px 10px;
-  }
+    height: 30%;
+    border: 4px solid rgb(159, 9, 159);
+    border-radius: 4px;
+}
+.card-info{
+    padding: 2rem;
+    border-radius: 1rem;
+    border-bottom: 8px solid #a3098c;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 1rem rgba(45, 45, 45, 0.1);
+
+}
+
   .welcome-text  {
     background: #00000088;
     color: white;
     padding: 1rem;
     border-radius: 2rem;
     user-select: none;
+}
+.nombre{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF5733;
+}	
+
+.biografia{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #454545;
+}
+
+@media (max-width: 768px) {
+    .info-container{
+        width: 100%;
+    }
+    .card-info {
+        max-width: 100%; 
+    }
+
+    .nombre {
+        font-size: 2rem; 
+    }
+
+    .biografia {
+        font-size: 1.2rem; 
+    }
 }
 
